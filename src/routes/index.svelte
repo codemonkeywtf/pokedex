@@ -1,15 +1,15 @@
 <script>
-  import { pokemon } from '../stores/pokestore'
-  import Pokemon from '../components/pokemon.svelte'
+  import { pokemon } from '../stores/pokestore';
+  import Pokemon from '../components/pokemon.svelte';
 
-  let search = ''
-  let filter = []
+  let search = '';
+  let filter = [];
 
   $: {
     if (search) {
-      filter = $pokemon.filter((pokeman) => pokeman.name.toLowerCase().includes(search.toLocaleLowerCase()))
+      filter = $pokemon.filter((pokeman) => pokeman.name.toLowerCase().includes(search.toLocaleLowerCase()));
     } else {
-      filter = [...$pokemon]
+      filter = [...$pokemon];
     }
   }
 </script>

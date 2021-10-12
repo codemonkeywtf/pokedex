@@ -1,12 +1,12 @@
 <script>
-  import Fa from 'svelte-fa/src/fa.svelte'
-  import { faGithub } from '@fortawesome/free-brands-svg-icons'
-  import GithubCorner from '../components/GithubCorner.svelte'
+  import Fa from 'svelte-fa/src/fa.svelte';
+  import { faGithub } from '@fortawesome/free-brands-svg-icons';
+  import GithubCorner from '../components/GithubCorner.svelte';
 
-  let toggle = false
+  let toggle = false;
   const handleClick = (toogle) => {
-    toggle = !toggle
-  }
+    toggle = !toggle;
+  };
 </script>
 
 <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
